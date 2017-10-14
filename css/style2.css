@@ -1,0 +1,46 @@
+
+html,body{
+    font-family: OpenSans-Regular;
+}
+.top{
+    /*border-bottom: 1px solid grey;*/
+    padding-left: 80px;
+}
+.company-title{
+    padding-top: 10px;
+}
+.company-title-info{
+    padding: 0px;
+}
+.company-title-text{
+    display: block;
+    font-size: 32px;
+    /*font-family: "Comic Sans MS";*/
+    font-family: "Arial";
+    text-align: left;
+}
+.company-title-text-dialog{
+    font-size: 14px;
+    font-family: "Comic Sans MS";
+}
+.company-top-address{
+    padding-top: 10px;
+    font-family: "Comic Sans MS";
+}
+.company-top-address-phone{
+
+}
+.company-top-address-text{
+
+}
+.nav_bottom{
+    font-family: Arial;
+    font-size: 16px;
+    background-color: #d8f057;
+}
+.nav > li:hover, .nav > li:focus {
+    background-color: lightgrey;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    color: black;
+}
