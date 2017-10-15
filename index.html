@@ -9,8 +9,32 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/style2.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+    <script>
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topButton").style.display = "block";
+            } else {
+                document.getElementById("topButton").style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Chrome, Safari and Opera
+            document.documentElement.scrollTop = 0; // For IE and Firefox
+        }
+
+
+        $(document).ready(function() {
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+        });
+    </script>
 </head>
 <body>
 <div class="top" id="topMenu">
@@ -53,17 +77,19 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav nav_1">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#topMenu">Home</a></li>
+                <li><a href="#aboutUs">About</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="https://school.moninfotech.com">School</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div>
 </nav>
 
+
+
 <!--project-section-->
-<div class="project-section">
+<div class="project-section" id="project">
     <div class="container">
         <div class="row row-section">
             <div class="section-title">
@@ -138,8 +164,131 @@
 <!--end feature-section-->
 
 
+<!--our partners-->
+<div class="our-partner-section">
+    <div class="container">
+        <div class="row row-section" style="padding-bottom: 50px;">
+            <div class="section-title">
+                Our Partners
+            </div>
+            <div class="section-content">
+                <div class="col-md-4 service-left">
+                    <img src="images/hotelsWeve.png" class="img-responsive" alt="" style="height:100px; width: 90%;">
+                    <!--<h4><b>Hotels Wave</b></h4>-->
+                </div>
+                <div class="col-md-4 service-left">
+                    <img src="images/itours.png" class="img-responsive" alt="" style="height:100px; width: 90%;">
+                    <!--<h4><b>iTours</b></h4>-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end our partners-->
+
+<!--our team-->
+<div class="our-team-section" id="aboutUs">
+    <div class="container">
+        <div class="row row-section">
+            <div class="section-title">
+                Our Team
+            </div>
+
+            <div class="section-content">
+                <div class="col-md-4 service-left">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt=""/>
+                    <h3>Namzul Alam<br/>
+                        <small>Software Developer and CEO</small>
+                    </h3>
+                </div>
+                <div class="col-md-4 service-left">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt=""/>
+                    <h3>Sayem Hossain<br/>
+                        <small>Software Developer and CTO</small>
+                    </h3>
+                </div>
+                <div class="col-md-4 service-left">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt=""/>
+                    <h3><br/>
+                        <small>Senior Software Developer</small>
+                    </h3>
+                </div>
+                <div class="col-md-4 service-left">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt=""/>
+                    <h3><br/>
+                        <small>Software Developer</small>
+                    </h3>
+                </div>
+                <div class="col-md-4 service-left">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt=""/>
+                    <h3><br/>
+                        <small>Software Developer</small>
+                    </h3>
+                </div>
+                <div class="col-md-4 service-left">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt=""/>
+                    <h3><br/>
+                        <small>Junior Senior Software Developer</small>
+                    </h3>
+                </div>
+
+                <div class="col-md-4 service-left">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt=""/>
+                    <h3><br/>
+                        <small>Business Development Manager</small>
+                    </h3>
+                </div>
+
+                <div class="col-md-4 service-left">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt=""/>
+                    <h3><br/>
+                        <small>Marketing Manager</small>
+                    </h3>
+                </div>
+
+                <div class="col-md-4 service-left">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt=""/>
+                    <h3><br/>
+                        <small>Office Executive</small>
+                    </h3>
+                </div>
+
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end our team-->
+
+
+<!--location-->
+<div class="our-partner-section" id="contact">
+    <div class="container">
+        <div class="row row-section" style="padding-bottom: 50px;">
+            <div class="section-title">
+                Our Location on Map
+            </div>
+            <div class="section-content">
+                <div class="col-md-4 service-left">
+                    <h4><b>7.1KM from Jatrabari</b></h4>
+                </div>
+                <div class="col-md-4 service-left">
+                    <h4><b>6.4KM from Chashara, Narayanganj</b></h4>
+                </div>
+                <div class="col-md-4 service-left">
+                    <h4><b>0.06KM from Bhuigor Bus-Stand</b></h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12679.187445407377!2d90.47186807007036!3d23.683780665938368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b72f392f76b9%3A0x85674d3e5e2faf2e!2sMonInfoTech!5e0!3m2!1sbn!2sbd!4v1508027503358" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<!--end location-->
+
 <!-- footer -->
-<div class="footer ">
+<div class="footer">
     <div class="container">
         <div class="col-md-3 footer-left">
             <h3>Navigation</h3>
@@ -165,7 +314,7 @@
             </ul>
         </div>
         <div class="col-md-3 footer-left">
-            <h3>Our Location</h3>
+            <h3>Our Location &amp; Contacts</h3>
             <li><i class="add"> </i>Bhuighar, Fatullah</li>
             <li><i class="phone"> </i>+880 1912 239643</li>
             <li><a href="mailto:nazmuldipu@gmail.com"><i class="mail"> </i>nazmuldipu@gmail.com</a></li>
@@ -176,7 +325,7 @@
     <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 0;"></span> <span id="toTopHover" style="opacity: 0;"> </span></a>
 </div>
 <!-- footer -->
-
-
+<!--<button onclick="topFunction()" id="topButton" title="Go to top"><i class="fa fa-angle-double-up"></i></button>-->
+<button onclick="topFunction()" id="topButton" title="Go to top"></button>
 </body>
 </html>

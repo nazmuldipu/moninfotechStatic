@@ -72,6 +72,9 @@ html,body{
 .feature-section{
     background-color: #63b8bd;
 }
+.our-team-section{
+    background: aliceblue;
+}
 .row-section .section-title{
     font-family: 'Josefin Slab', serif;
     font-size: 32px;
@@ -199,3 +202,22 @@ i.insta {
 }
 
 /*end footer*/
+#topButton {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    background: url(../images/arrow.1.png) no-repeat 0px 0px;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border: 1px solid black;
+    -webkit-border-radius:70px;
+    -moz-border-radius:70px;
+    border-radius:70px
+}
+
+#topButton:hover {
+    background-color: lightgrey; /* Add a dark-grey background on hover */
+}
