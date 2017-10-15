@@ -36,6 +36,9 @@ html,body{
 .navbar{
     margin-bottom: 0px;
 }
+.navbar-nav{
+    text-align: center;
+}
 .nav_bottom{
     font-family: Arial;
     font-size: 16px;
@@ -47,7 +50,21 @@ html,body{
 .nav > li > a:hover, .nav > li > a:focus {
     color: black;
 }
-
+@media (max-width: 768px) {
+    .navbar-toggle1 {
+        border-color: #2f374c;
+        background-color: #2f374c;
+        border-radius: 2px;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #2f374c;
+        background-color: #2f374c;
+        border-radius: 2px;
+    }
+    .navbar-toggle1 .icon-bar {
+        background-color: #fff;
+    }
+}
 .row-section{
     padding-top: 80px;
     /*background-color: #63b8bd;*/
