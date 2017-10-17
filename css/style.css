@@ -21,11 +21,13 @@ html,body{
 }
 .company-title-text-dialog{
     font-size: 14px;
-    font-family: "Comic Sans MS";
+    font-family: 'Overlock', cursive;
+    font-weight: 600;
 }
 .company-top-address{
-    padding-top: 10px;
-    font-family: "Comic Sans MS";
+    padding-top: 16px;
+    font-family: 'Overlock', cursive;
+    font-weight: 600;
 }
 .company-top-address-phone{
 
@@ -72,6 +74,9 @@ html,body{
 .feature-section{
     background-color: #63b8bd;
 }
+.our-expertise-section{
+    /*background-color: #f8ffd7;*/
+}
 .our-team-section{
     background: aliceblue;
 }
@@ -114,6 +119,9 @@ html,body{
     text-align: center;
     font-family: Verdana;
 
+}
+.service-left{
+    padding-top: 30px;
 }
 .service-left p{
     text-align: justify;
